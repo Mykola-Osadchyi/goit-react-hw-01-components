@@ -1,24 +1,28 @@
-import UserProfile from './components/social-profile/UserProfile';
 import Section from './components/Section';
+import UserProfile from './components/social-profile/UserProfile';
+import Statistics from './components/statistics/Statistics'
 import user from './components/social-profile/user.json';
+import statisticalData from './components/statistics/statistical-data.json'; 
 
 export default function App() {
   return (
-    <div>
+    <div class="container">
       <Section title="Задание 1 - Профиль социальной сети">
         <UserProfile
           name={user.name}
           tag={user.tag}
           location={user.location}
           avatar={user.avatar}
-          // userStats={user.stats}
-          followers={user.stats.followers}
-          views={user.stats.views}
-          likes={user.stats.likes}
+          stats={user.stats}
         />
       </Section>
 
-      <Section title="Задание 2 - Секция статистики"></Section>
+      <Section title="Задание 2 - Секция статистики">
+        <Statistics
+          statTitle="Upload stats"
+          items={statisticalData}
+        />
+      </Section>
       <Section title="Задание 3 - Список друзей"></Section>
       <Section title="Задание 4 - История транзакций"></Section>
     </div>

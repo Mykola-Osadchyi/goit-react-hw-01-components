@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const UserProfile = (props) => {
   const defaultAvatar = 'https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg';
-  const { name, tag, location, avatar = defaultAvatar, followers, views, likes } = props;
+  const { name, tag, location, avatar = defaultAvatar, stats, } = props;
     return (<div class="profile">
     <div class="description">
       <img
@@ -19,15 +19,15 @@ const UserProfile = (props) => {
     <ul class="stats">
       <li>
         <span class="label">Followers </span>
-        <span class="quantity">{followers}</span>
+        <span class="quantity">{stats.followers}</span>
       </li>
       <li>
         <span class="label">Views </span>
-        <span class="quantity">{views}</span>
+        <span class="quantity">{stats.views}</span>
       </li>
       <li>
         <span class="label">Likes </span>
-        <span class="quantity">{likes}</span>
+        <span class="quantity">{stats.likes}</span>
       </li>
     </ul>
   </div>);
@@ -38,9 +38,11 @@ UserProfile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  followers: PropTypes.number.isRequired,
-  views: PropTypes.number.isRequired,
-  likes: PropTypes.number.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired
+  })
 };
 
 export default UserProfile;

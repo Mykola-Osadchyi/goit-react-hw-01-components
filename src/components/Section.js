@@ -1,12 +1,11 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
 function Section({ title, children }) {
   return (
-    <div>
+    <section class="task">
       {title && <h2>{title}</h2>}
       {children}
-    </div>
+    </section>
   );
 }
 
