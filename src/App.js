@@ -1,8 +1,10 @@
 import Section from './components/Section';
 import UserProfile from './components/social-profile/UserProfile';
 import Statistics from './components/statistics/Statistics'
+import FriendList from './components/friend-list/FriendList';
 import user from './components/social-profile/user.json';
-import statisticalData from './components/statistics/statistical-data.json'; 
+import statisticalData from './components/statistics/statistical-data.json';
+import friends from './components/friend-list/friends.json';
 
 export default function App() {
   return (
@@ -23,7 +25,9 @@ export default function App() {
           items={statisticalData}
         />
       </Section>
-      <Section title="Задание 3 - Список друзей"></Section>
+      <Section title="Задание 3 - Список друзей">
+        <FriendList userFriends={friends} />
+      </Section>
       <Section title="Задание 4 - История транзакций"></Section>
     </div>
   );
