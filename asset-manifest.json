@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Mykola-Osadchyi/goit-react-hw-01-components/static/css/main.4f6f39f7.chunk.css",
+    "main.js": "/Mykola-Osadchyi/goit-react-hw-01-components/static/js/main.649cf122.chunk.js",
+    "main.js.map": "/Mykola-Osadchyi/goit-react-hw-01-components/static/js/main.649cf122.chunk.js.map",
+    "runtime-main.js": "/Mykola-Osadchyi/goit-react-hw-01-components/static/js/runtime-main.aa8fdecf.js",
+    "runtime-main.js.map": "/Mykola-Osadchyi/goit-react-hw-01-components/static/js/runtime-main.aa8fdecf.js.map",
+    "static/js/2.162168ee.chunk.js": "/Mykola-Osadchyi/goit-react-hw-01-components/static/js/2.162168ee.chunk.js",
+    "static/js/2.162168ee.chunk.js.map": "/Mykola-Osadchyi/goit-react-hw-01-components/static/js/2.162168ee.chunk.js.map",
+    "index.html": "/Mykola-Osadchyi/goit-react-hw-01-components/index.html",
+    "static/css/main.4f6f39f7.chunk.css.map": "/Mykola-Osadchyi/goit-react-hw-01-components/static/css/main.4f6f39f7.chunk.css.map",
+    "static/js/2.162168ee.chunk.js.LICENSE.txt": "/Mykola-Osadchyi/goit-react-hw-01-components/static/js/2.162168ee.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aa8fdecf.js",
+    "static/js/2.162168ee.chunk.js",
+    "static/css/main.4f6f39f7.chunk.css",
+    "static/js/main.649cf122.chunk.js"
+  ]
+}
