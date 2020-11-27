@@ -1,19 +1,25 @@
 import PropTypes from 'prop-types';
 
-function randomColor() { 
-  return Math.floor(Math.random() * 255); 
-};
+function randomColor() {
+  return Math.floor(Math.random() * 255);
+}
 
 function Statistics({ statTitle, items }) {
   return (
-    <section class="statistics">
-      {statTitle && <h3 class="statistics-title">{statTitle}</h3>}
+    <section className="statistics">
+      {statTitle && <h3 className="statistics-title">{statTitle}</h3>}
 
-      <ul class="stat-list">
+      <ul className="stat-list">
         {items.map(item => (
-          <li key={item.id} class="item" style={{backgroundColor: `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`}}>
-            <span class="label">{item.label}</span>
-            <span class="percentage">{item.percentage}%</span>
+          <li
+            key={item.id}
+            className="item"
+            style={{
+              backgroundColor: `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`,
+            }}
+          >
+            <span className="label">{item.label}</span>
+            <span className="percentage">{item.percentage}%</span>
           </li>
         ))}
       </ul>

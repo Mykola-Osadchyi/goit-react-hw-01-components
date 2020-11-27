@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function TransactionHistory({ userTransactions }) {
   return (
-    <table class="transaction-history">
+    <table className="transaction-history">
       <thead>
         <tr>
           <th>Type</th>

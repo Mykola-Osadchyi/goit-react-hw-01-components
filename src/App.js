@@ -1,17 +1,18 @@
-import Section from './components/Section';
-import UserProfile from './components/social-profile/UserProfile';
-import Statistics from './components/statistics/Statistics'
-import FriendList from './components/friend-list/FriendList';
-import TransactionHistory from './components/transaction-history/TransactionHistory';
+import Container from './components/Container/Container';
+import Section from './components/Section/Section';
+import UserProfile from './components/UserProfile/UserProfile';
+import Statistics from './components/Statistics/Statistics';
+import FriendList from './components/FriendList/FriendList';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 
-import user from './components/social-profile/user.json';
-import statisticalData from './components/statistics/statistical-data.json';
-import friends from './components/friend-list/friends.json';
-import transactions from './components/transaction-history/transactions.json';
+import user from './components/UserProfile/user.json';
+import statisticalData from './components/Statistics/statistical-data.json';
+import friends from './components/FriendList/friends.json';
+import transactions from './components/TransactionHistory/transactions.json';
 
 export default function App() {
   return (
-    <div class="container">
+    <Container>
       <Section title="Задание 1 - Профиль социальной сети">
         <UserProfile
           name={user.name}
@@ -21,23 +22,15 @@ export default function App() {
           stats={user.stats}
         />
       </Section>
-
       <Section title="Задание 2 - Секция статистики">
-        <Statistics
-          statTitle="Upload stats"
-          items={statisticalData}
-        />
+        <Statistics statTitle="Upload stats" items={statisticalData} />
       </Section>
       <Section title="Задание 3 - Список друзей">
-        <FriendList
-          userFriends={friends}
-        />
+        <FriendList userFriends={friends} />
       </Section>
       <Section title="Задание 4 - История транзакций">
-        <TransactionHistory
-          userTransactions={transactions}
-        />
+        <TransactionHistory userTransactions={transactions} />
       </Section>
-    </div>
+    </Container>
   );
 }

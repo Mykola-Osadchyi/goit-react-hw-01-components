@@ -1,10 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Transactions = ({
-  type,
-  amount,
-  currency,
-}) => {
+const Transactions = ({ type, amount, currency }) => {
   return (
     <tr>
       <td>{type}</td>
